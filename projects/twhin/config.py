@@ -7,8 +7,8 @@ import pydantic
 
 
 class TwhinConfig(base_config.BaseConfig):
-  runtime: RuntimeConfig = pydantic.Field(RuntimeConfig())
-  training: TrainingConfig = pydantic.Field(TrainingConfig())
-  model: TwhinModelConfig
-  train_data: TwhinDataConfig
-  validation_data: TwhinDataConfig
+    runtime: RuntimeConfig = pydantic.Field(RuntimeConfig())
+    training: TrainingConfig = pydantic.Field(TrainingConfig())
+    model: TwhinModelConfig
+    train_data: TwhinDataConfig
+    validation_data: TwhinDataConfig
